@@ -3,7 +3,7 @@ import { Timeline } from "components/Timeline";
 export default function Roadmap() {
     const data = [
         {
-            title: "Q3 2024 - Game Foundation",
+            title: "Q4 2024 - Game Foundation",
             content: (
                 <div>
                     <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">

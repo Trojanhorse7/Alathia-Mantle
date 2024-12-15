@@ -25,7 +25,7 @@ const CreateBattle = () => {
         toast.error("Please Register Player First");
         navigate('/register');
       } else if (error?.message.includes("Battle already exists!")) {
-        toast.error("BattleName Already Exist, Use Another.");
+        toast.error("BattleName Already Exist.");
       } else {
         toast.error('Error Occured!')
       }
@@ -51,6 +51,7 @@ const CreateBattle = () => {
   useEffect(() => {
     // Set waitBattle to true if the transaction is successful
     if (isSuccess) {
+      toast.success("Battle Created");
       setWaitBattle(true);
     }
   }, [isSuccess])
