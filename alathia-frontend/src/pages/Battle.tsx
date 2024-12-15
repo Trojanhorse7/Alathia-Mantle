@@ -8,7 +8,6 @@ import { Tooltip } from 'react-tooltip';
 
 //Blockchain
 import { useContractWrite, usePrepareContractWrite, useAccount, useContractReads, useWaitForTransaction } from 'wagmi'
-import { parseGwei } from 'viem'
 import { abi, contractAddress } from '../contract/index.js';
 import { useGlobalContext } from '../store';
 
