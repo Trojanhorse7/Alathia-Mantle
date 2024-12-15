@@ -101,9 +101,7 @@ const Battle: React.FC = () => {
     functionName: 'attackOrDefendChoice',
     args: [choice, battleName],
     enabled: choice !== undefined,
-    gas: 200_000n,
     staleTime: 2_000,
-    gasPrice: parseGwei('21000'),
     onError(error) {
       if (error?.message.includes("You have already made a move!")) {
         toast.error("You have already made a move!");
